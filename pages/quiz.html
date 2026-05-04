@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC Degrees</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="../css/less/styling.less" />
+    
+    <!-- imports for less and bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- quiz scripts -->
+    <script src="../js/enabler.js" defer></script> 
+</head>
+<body>
+
+    <!-- Header with nav -->
+    <header>
+        <!-- navbar imported from portfolio project -- changed to dark for better contrast-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
+            <div class="container">
+                <!-- using a school logo i found online logo -->
+                <a class="navbar-brand" href="../index.html" >
+                    <img src="../images/acc_logo.webp" alt="Purdue School of Applied and Creative Computing Logo" style="width: 64px; height: 64px;">
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" >
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+
+                <div class="collapse navbar-collapse" id="navMenu"> 
+                    <ul class="navbar-nav mx-5"> 
+                        <li class="nav-item"> 
+                        <a class="nav-link" href="../index.html">Home</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                        <a class="nav-link" href="./programs.html">Programs</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                        <a class="nav-link active" href="./quiz.html">Quiz</a> 
+                        </li> 
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+    <header>
+        <h1 style="text-align: center; margin: 1em;">Quiz</h1>
+    </header>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="w-100" style="max-width: 600px;">
+
+            <!-- 
+                fieldset and legends get overriden by bootstrap.
+                I found this online to style the fieldsets
+            -->
+            <!--
+                Source - https://stackoverflow.com/a/74006448
+                Posted by Code GuruDev
+                Retrieved 2026-05-04, License - CC BY-SA 4.0
+            -->
+
+            <!-- Q1 BUTTON QUESTION -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">
+                    Q1: What technology is used to add interactivity to the web?
+                </legend>
+                <div class="btn-group">
+                    <button class="btn btn-primary q1" data-choice="0">JavaScript</button>
+                    <button class="btn btn-secondary q1" data-choice="1">SQL</button>
+                    <button class="btn btn-info q1" data-choice="2">Java</button>
+                </div>
+                <p id="q1_answer"></p>
+            </fieldset>
+
+            <br>
+            <!-- Q2 CHECKBOX QUESTION -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q2: What is included in the HTML Suite? Select all correct answers</legend>
+
+                <input type="checkbox" correct class="q2" id="q2a">
+                <label for="q2a">HTML</label>
+
+                <input type="checkbox" class="q2" id="q2b">
+                <label for="q2b">Python</label>
+
+                <input type="checkbox" correct class="q2" id="q2c">
+                <label for="q2c">CSS</label>
+
+                <input type="checkbox" correct class="q2" id="q2d">
+                <label for="q2d">JavaScript</label>
+
+                <input type="checkbox" class="q2" id="q2e">
+                <label for="q2e">Lua</label>
+
+                <p id="q2_answer"></p>
+
+                <button class="btn button-and-text-inverse" id="q2_check">Check Q2</button>
+            </fieldset>
+
+            <br>
+            <!-- Q3 RADIO QUESTION -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q3: What does HTTP stand for?</legend>
+
+                <input type="radio" name="q3" id="q3a">
+                <label for="q3a">Hyperlink Traversal Trail Protocol</label>
+                <br>
+                <input type="radio" name="q3" id="q3b">
+                <label for="q3b">Hello Temporary Tattoo Parlour</label>
+                <br>
+                <input type="radio" name="q3" id="q3c">
+                <label for="q3c">HyperText Transfer Protocol</label>
+
+                <br><br>
+                <button class="btn button-and-text-inverse" id="q3_check">Submit</button>
+                <p id="q3_answer"></p>
+            </fieldset>
+            
+            <br>
+            <!-- Q4 BUTTON -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q4: What is the process of hiding information inside of information?</legend>
+                <div class="btn-group">
+                    <button class="btn btn-primary q4" data-choice="0">Cryptography</button>
+                    <button class="btn btn-secondary q4" data-choice="1">Steganography</button>
+                    <button class="btn btn-info q4" data-choice="2">Photography</button>
+                </div>
+                <p id="q4_answer"></p>
+            </fieldset>
+
+            <br>
+            <!-- Q5 CHECKBOX -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q5: What Are Some Common Types of Databases?</legend>
+
+                <input type="checkbox" class="q5" id="q5a">
+                <label for="q5a">JavaScript Databases</label>
+
+                <input type="checkbox" correct class="q5" id="q5b">
+                <label for="q5b">Relational Databases</label>
+
+                <br>
+                <input type="checkbox" correct class="q5" id="q5c">
+                <label for="q5c">NoSQL/Document Style Databases</label>
+
+                <br>
+                <input type="checkbox" class="q5" id="q5d">
+                <label for="q5d">Framework Databases</label>
+
+                <input type="checkbox" class="q5" id="q5e">
+                <label for="q5e">Matrical Databases</label>
+
+                <p id="q5_answer"></p>
+
+                <button class="btn button-and-text-inverse" id="q5_check">Check Q5</button>
+            </fieldset>
+            
+            <br>
+            <!-- Q6 RADIO -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q6: True/False: Queries are used to perform CRUD (Create, Read, Update, Delete) operations on databases.</legend>
+
+                <input type="radio" name="q6" id="q6a">
+                <label for="q6a">True</label>
+
+                <input type="radio" name="q6" id="q6b">
+                <label for="q6b">False</label>
+
+                <br><br>
+                <button class="btn button-and-text-inverse" id="q6_check">Submit</button>
+                <p id="q6_answer"></p>
+            </fieldset>
+            
+            <br>
+            <!-- Q7 BUTTON -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q7: What is Commonly Used as a UI/UX Wireframing Tool?</legend>
+                <div class="btn-group">
+                    <button class="btn btn-primary q7" data-choice="0">Visual Studio Code</button>
+                    <button class="btn btn-secondary q7" data-choice="1">Figma</button>
+                    <button class="btn btn-info q7" data-choice="2">Git</button>
+                </div>
+                <p id="q7_answer"></p>
+            </fieldset>
+            
+            <br>
+            <!-- Q8 CHECKBOX -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q8: Select All of the Layers of the OSI Model</legend>
+
+                <input type="checkbox" correct class="q8" id="q8a">
+                <label for="q8a">Application</label>
+
+                <input type="checkbox" correct class="q8" id="q8b">
+                <label for="q8b">Presentation</label>
+
+                <input type="checkbox" correct class="q8" id="q8c">
+                <label for="q8c">Session</label>
+
+                <br>
+                <input type="checkbox" correct class="q8" id="q8d">
+                <label for="q8d">Transport</label>
+
+                <input type="checkbox" correct class="q8" id="q8e">
+                <label for="q8e">Network</label>
+
+                <input type="checkbox" correct class="q8" id="q8f">
+                <label for="q8f">Data Link</label>
+
+                <br>
+                <input type="checkbox" correct class="q8" id="q8g">
+                <label for="q8g">Physical</label>
+
+                <input type="checkbox" class="q8" id="q8h">
+                <label for="q8h">Concrete</label>
+
+                <input type="checkbox" class="q8" id="q8i">
+                <label for="q8i">Server</label>
+
+                <p id="q8_answer"></p>
+
+                <br><br>
+                <button class="btn button-and-text-inverse" id="q8_check">Check Q8</button>
+            </fieldset>
+
+            <br>
+            <!-- Q9 RADIO -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q9: What Does CSS Primarily Control?</legend>
+
+                <input type="radio" name="q9" id="q9a">
+                <label for="q9a">Networking Infastructure</label>
+                <br>
+                <input type="radio" name="q9" id="q9b">
+                <label for="q9b">Styling</label>
+                <br>
+                <input type="radio" name="q9" id="q9c">
+                <label for="q9c">Database Schema</label>
+
+                <br><br>
+                <button class="btn button-and-text-inverse" id="q9_check">Submit</button>
+                <p id="q9_answer"></p>
+            </fieldset>
+            
+            <br>
+            <!-- Q10 BUTTON -->
+            <fieldset class="border rounded-3 p-3">
+                <legend class="float-none w-auto px-1">Q10: Which SQL Statement is Used to Retrieve Data from a Database?</legend>
+                <div class="btn-group">
+                    <button class="btn btn-primary q10" data-choice="0">INSERT</button>
+                    <button class="btn btn-secondary q10" data-choice="1">UPDATE</button>
+                    <button class="btn btn-info q10" data-choice="2">SELECT</button>
+                    <button class="btn btn-warning q10" data-choice="3">DELETE</button>
+                </div>
+                <p id="q10_answer"></p>
+            </fieldset>
+            
+            <br>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

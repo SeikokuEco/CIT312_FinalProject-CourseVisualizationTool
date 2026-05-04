@@ -1,0 +1,64 @@
+// this is all styling the hero section on main
+#hero {
+    // make section take up the entire viewport height
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    // styling to make it pretty
+    position: relative;
+    padding: 6rem 0;
+    text-align: center;
+    background: @blackGradient;
+    color: @white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+#hero h1 em {
+    color: @gold;
+    font-style: normal;
+}
+
+#hero .lead {
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.2rem;
+    color: @offWhite;
+}
+
+// sets button to gold and makes all transitions smoother
+.btn.btn-gold {
+    background-color: @gold;
+    color: @black;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+// makes button move up slightly and makes the colour darker
+.btn-gold:hover {
+    background-color: darken(@gold, 10%);
+    color: @black;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 1px solid @offWhite;
+}
+
+.btn-outline-light:hover {
+    background-color: @offBlack;
+}
+
+// adds middle highlight in background
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: @heroCircleGradient;
+    z-index: 0;
+}

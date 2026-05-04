@@ -1,0 +1,32 @@
+// importing the colours file
+@import 'colours';
+// import hero card
+@import 'hero';
+
+// setting the button and header to use black background and gold text
+// matches purdue's colours and contrasts well
+.btn.button-and-text, .card-header.button-and-text {
+    background-color: @black;
+    color: @gold;
+}
+
+// remove bootstrap's button highlight and add my own
+.btn.button-and-text:hover {
+    background-color: @black;
+    color: @gold;
+    filter: brightness(1.2);
+}
+
+
+// inverse of above
+.btn.button-and-text-inverse, .card-header.button-and-text-inverse {
+    background-color: @gold;
+    color: @black;
+    font-weight: bolder;
+}
+
+// remove bootstrap's button highlight and add my own
+.btn.button-and-text-inverse:hover {
+    background-color: darken(@gold, 20%);
+    color: @black;
+}

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC Degrees</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="../css/less/styling.less" />
+    
+    <!-- imports for less and bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+
+</head>
+<body class="body-colours">
+
+    <!-- Header with nav -->
+    <header>
+        <!-- navbar imported from portfolio project -- changed to dark for better contrast-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
+            <div class="container">
+                <!-- using a school logo i found online logo -->
+                <a class="navbar-brand" href="../index.html" >
+                    <img src="../images/acc_logo.webp" alt="Purdue School of Applied and Creative Computing Logo" style="width: 64px; height: 64px;">
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" >
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+
+                <div class="collapse navbar-collapse" id="navMenu"> 
+                    <ul class="navbar-nav mx-5"> 
+                        <li class="nav-item"> 
+                        <a class="nav-link" href="../index.html">Home</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                        <a class="nav-link active" href="./programs.html">Programs</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                        <a class="nav-link" href="./quiz.html">Quiz</a> 
+                        </li> 
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+
+    <header>
+        <h1 style="text-align: center; margin: 1em;">Degree Programs</h1>
+    </header>
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <!-- Accordions used to showcase the courses and jobs available with the degree path -->
+            <!-- I asked AI to format the course listings because it would've taken a very long time to do all of them -->
+
+            <!-- Animation and Visual Effects card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Animation and Visual Effects</div> 
+                    <img class="card-img" src="../images/animation-visual-effects.jpg" alt="Illustration of animation and visual effects techniques used in entertainment and film" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Enhance entertainment and film videos by combining real and virtual actors and settings.</p>
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses1"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses1"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CGT 11200</strong> - Sketching For Visualization And Communication</li>
+                                            <li><strong>CGT 11600</strong> - Geometric Modeling For Visualization And Communication</li>
+                                            <li><strong>CGT 11800</strong> - Fundamentals Of Imaging Technology</li>
+                                            <li><strong>CGT 12300</strong> - Animation Foundations</li>
+                                            <li><strong>CGT 14100</strong> - Internet Foundations Technologies And Development</li>
+                                            <li><strong>CGT 14700</strong> - Visual Effects Introduction</li>
+                                            <li><strong>CGT 17208</strong> - User Experience Design Studio I: Fundamentals (UCC: STS)</li>
+                                            <li><strong>CGT 20500</strong> - Portfolio Review</li>
+                                            <li><strong>CGT 24100</strong> - Introduction To Computer Animation</li>
+                                            <li><strong>CGT 25001</strong> - Computer Graphics Professional Practices I</li>
+                                            <li><strong>CGT 27000</strong> - Introduction To Data Visualization</li>
+                                            <li><strong>CGT 30505</strong> - Portfolio II</li>
+                                            <li><strong>CGT 40500</strong> - Senior Portfolio Review</li>
+                                            <li><strong>CGT 41101</strong> - Contemporary Problems In Applied Computer Graphics I</li>
+                                            <li><strong>CGT 41201</strong> - Contemporary Problems In Applied Computer Graphics II</li>
+                                            <li><strong>CGT 44200</strong> - Production For Computer Animation (must be taken twice for 6 credits total)</li>
+                                            <li><strong>CGT 45001</strong> - Computer Graphics Professional Practices II</li>
+
+                                            <li><strong>Intercultural Requirement</strong></li>
+                                            <li><strong>Humanities Requirement</strong></li>
+                                            <li><strong>Professional Requirement</strong></li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs1"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs1"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>3D Animator</li>
+                                            <li>VFX Artist</li>
+                                            <li>Motion Graphics Designer</li>
+                                            <li>Lighting & Rendering Artist</li>
+                                            <li>Compositing Artist</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+
+                        </div>
+                        <!-- end toggle info -->
+                        
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Computer and Information Technology card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Computer and Information Technology</div> 
+                    <img class="card-img" src="../images/computer-and-information-technology.jpg" alt="Computer systems and information technology infrastructure" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Keep your employer’s systems functioning efficiently and their data safe as you manage applications, databases and networks.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses2"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses2"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CNIT 15501</strong> - Introduction To Software Development Concepts</li>
+                                            <li><strong>CNIT 17600</strong> - Information Technology Architectures</li>
+                                            <li><strong>CNIT 18000</strong> - Introduction To Systems Development (Gateway to CIT)</li>
+                                            <li><strong>CNIT 24200</strong> - System Administration</li>
+                                            <li><strong>CNIT 25501</strong> - Object-Oriented Programming Introduction</li>
+                                            <li><strong>CNIT 27000</strong> - Cybersecurity Fundamentals I</li>
+                                            <li><strong>CNIT 27200</strong> - Database Fundamentals</li>
+                                            <li><strong>CNIT 28000</strong> - Systems Analysis And Design Methods</li>
+                                            <li><strong>CNIT 32000</strong> - Policy, Regulation, And Globalization In Information Technology</li>
+                                            <li><strong>CNIT 48000</strong> - Managing Information Technology Projects</li>
+
+                                            <br>
+                                            <strong>Programming Selective</strong>
+                                            <li><strong>CNIT 31500</strong> - Systems Programming</li>
+                                            <li><strong>CNIT 32500</strong> - Object-Oriented Application Development</li>
+
+                                            <br>
+                                            <strong>Database Selective</strong>
+                                            <li><strong>CNIT 37200</strong> - Database Programming</li>
+                                            <li><strong>CNIT 39200</strong> - Enterprise Data Management</li>
+
+                                            <strong>Information Technology Selectives</strong>
+                                            <li>At least nine credits must be CNIT courses</li>
+                                            <li>Any non-required 30000 level or higher CNIT course or EPICS (EPCS): participation requires IT responsibility and CIT faculty approval</li>
+                                            <li>CGT courses (30000 level or higher)</li>
+
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs2"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs2"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Software Developer</li>
+                                            <li>IT Support Specialist</li>
+                                            <li>Systems Analyst</li>
+                                            <li>Application Developer</li>
+                                            <li>Technical Consultant</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->          
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Computing Infrastructure and Network Engineering Technology card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Computing Infrastructure and Network Engineering Technology</div> 
+                    <img class="card-img" src="../images/network-engineering-technology-degree-purdue.jpg" alt="Network engineering and computing infrastructure diagram" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Focus on high-level computer network design with a foundation in hardware and software to manage networks and solve networking challenges.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses3"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses3"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CNIT 15501</strong> - Introduction To Software Development Concepts</li>
+                                            <li><strong>CNIT 17600</strong> - Information Technology Architectures</li>
+
+                                            <li>
+                                                <strong>CNIT 18000</strong> - Introduction To Systems Development<br>
+                                                <em>OR</em><br>
+                                                <strong>CNIT 18200</strong> - System And Organizational Security
+                                            </li>
+
+                                            <li><strong>CNIT 24200</strong> - System Administration</li>
+                                            <li><strong>CNIT 25501</strong> - Object-Oriented Programming Introduction</li>
+                                            <li><strong>CNIT 27000</strong> - Cybersecurity Fundamentals I</li>
+                                            <li><strong>CNIT 27200</strong> - Database Fundamentals</li>
+                                            <li><strong>CNIT 31500</strong> - Systems Programming</li>
+                                            <li><strong>CNIT 34400</strong> - Network Engineering Fundamentals</li>
+
+                                            <li>
+                                                <strong>CNIT 32000</strong> - Policy, Regulation, And Globalization In Information Technology<br>
+                                                <em>OR</em><br>
+                                                <strong>CNIT 37100</strong> - Cyberlaw And Ethics
+                                            </li>
+
+                                            <li><strong>CNIT 34000</strong> - UNIX Administration</li>
+
+                                            <li>
+                                                <strong>CNIT 34220</strong> - Network Administration (3 credits required)<br>
+                                                <em>OR 2-3 credits depending on enrollment</em>
+                                            </li>
+
+                                            <li>
+                                                <strong>CNIT 34500</strong> - Internetwork Design And Implementation (3-4 credits, 3 required)<br>
+                                                <strong>CNIT 34600</strong> - Wireless Networks (3-4 credits, 3 required)
+                                            </li>
+
+                                            <li><strong>CNIT 45500</strong> - Network Security</li>
+                                            <li><strong>CNIT 48000</strong> - Managing Information Technology Projects</li>
+
+                                            <br>
+                                            <strong>Computing Infrastructure Selectives</strong>
+
+                                            <li><strong>CNIT 41700</strong> - Critical Infrastructure Security</li>
+                                            <li><strong>CNIT 43500</strong> - Advanced Network Services</li>
+                                            <li><strong>CNIT 44500</strong> - Advanced Internetwork Routing And Switching</li>
+                                            <li><strong>CNIT 44600</strong> - Advanced Wireless Networks</li>
+                                            <li><strong>CNIT 45600</strong> - Wireless Security And Management</li>
+                                            <li><strong>CNIT 47000</strong> - Incident Response Management</li>
+                                            <li><strong>CNIT 55500</strong> - Advanced Network Security</li>
+
+                                            <br>
+                                            <strong>Information Technology Selectives</strong>
+
+                                            <li>
+                                                Any non-required 30000 level or higher CNIT course or EPICS (EPCS) with IT component and CIT faculty approval<br>
+                                                CGT courses (30000 level or higher)
+                                            </li>
+
+                                            <li>At least three credits must be CNIT courses</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs3"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs3"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Network Engineer</li>
+                                            <li>Systems Administrator</li>
+                                            <li>Cloud Infrastructure Specialist</li>
+                                            <li>DevOps Engineer</li>
+                                            <li>Network Security Technician</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->      
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Cybersecurity card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Cybersecurity</div> 
+                    <img class="card-img" src="../images/cybersecurity-degree-purdue.jpg" alt="Cybersecurity concepts and network security visualization" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Learn to create and maintain secure networks and ways to track down hackers who aim to breach that security.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses4"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses4"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+                                            <br><br>
+                                            <strong>Computer and Information Technology Courses</strong>
+
+                                            <li><strong>CNIT 15501</strong> - Introduction To Software Development Concepts</li>
+                                            <li><strong>CNIT 17600</strong> - Information Technology Architectures</li>
+                                            <li><strong>CNIT 18200</strong> - System And Organizational Security</li>
+                                            <li><strong>CNIT 24200</strong> - System Administration</li>
+                                            <li><strong>CNIT 25501</strong> - Object-Oriented Programming Introduction</li>
+                                            <li><strong>CNIT 27000</strong> - Cybersecurity Fundamentals I</li>
+                                            <li><strong>CNIT 27200</strong> - Database Fundamentals</li>
+                                            <li><strong>CNIT 34000</strong> - UNIX Administration</li>
+                                            <li>
+                                                <strong>CNIT 34220</strong> - Network Administration (3 credits required; 2–3 credits possible)
+                                            </li>
+                                            <li><strong>CNIT 34400</strong> - Network Engineering Fundamentals</li>
+                                            <li><strong>CNIT 48000</strong> - Managing Information Technology Projects</li>
+
+                                            <br>
+                                            <strong>Cybersecurity Courses</strong>
+
+                                            <li><strong>CNIT 27100</strong> - Cybersecurity Fundamentals II</li>
+                                            <li><strong>CNIT 37000</strong> - Introduction To Cryptography</li>
+                                            <li><strong>CNIT 37100</strong> - Cyberlaw And Ethics</li>
+                                            <li><strong>CNIT 32300</strong> - Basic Cyberforensics</li>
+                                            <li><strong>CNIT 42200</strong> - Cyber Criminology</li>
+                                            <li><strong>CNIT 45500</strong> - Network Security</li>
+                                            <li><strong>CNIT 47000</strong> - Incident Response Management</li>
+                                            <li><strong>CNIT 47100</strong> - Vulnerability Analysis And Testing</li>
+
+                                            <br>
+                                            <strong>Cybersecurity Selectives (9 credits)</strong>
+
+                                            <li><em>Not all courses will be available every semester.</em></li>
+
+                                            <li><strong>CNIT 31500</strong> - Systems Programming</li>
+                                            <li><strong>CNIT 32200</strong> - Research Methodology And Design</li>
+                                            <li>
+                                                <strong>CNIT 34600</strong> - Wireless Networks (3-4 credits)
+                                            </li>
+                                            <li><strong>CNIT 41500</strong> - Advanced Coding Security</li>
+                                            <li><strong>CNIT 41700</strong> - Critical Infrastructure Security</li>
+                                            <li><strong>CNIT 42100</strong> - Mobile Forensics</li>
+                                            <li><strong>CNIT 44500</strong> - Advanced Internetwork Routing And Switching</li>
+                                            <li><strong>CNIT 45600</strong> - Wireless Security And Management</li>
+                                            <li><strong>CNIT 47700</strong> - Blockchain</li>
+                                            <li><strong>CNIT 48300</strong> - Applied Machine Learning</li>
+                                            <li><strong>CNIT 51100</strong> - Foundations In Homeland Security Studies</li>
+                                            <li><strong>CNIT 51200</strong> - Managing Resources And Applications For Homeland Security</li>
+                                            <li><strong>CNIT 52300</strong> - File System Forensics</li>
+                                            <li><strong>CNIT 52500</strong> - Mobile And Embedded Device Forensics</li>
+                                            <li><strong>CNIT 55500</strong> - Advanced Network Security</li>
+                                            <li><strong>CNIT 55700</strong> - Advanced Research Topics In Cyber Forensics</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs4"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs4"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Cybersecurity Analyst</li>
+                                            <li>Security Engineer</li>
+                                            <li>Incident Response Specialist</li>
+                                            <li>Penetration Tester</li>
+                                            <li>Digital Forensics Analyst</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->           
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Data Analytics, Technologies and Applications card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Data Analytics, Technologies and Applications</div> 
+                    <img class="card-img" src="../images/data-analytics-major-purdue.jpg" alt="Data analytics and visualization charts and graphs" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Leverage statistical and machine learning techniques by applying and evaluating database analytics approaches, techniques and tools to solve problems.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses5"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses5"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+                                            <br><br>
+                                            <strong>Computer and Information Technology Core Courses</strong>
+
+                                            <li><strong>CNIT 15501</strong> - Introduction To Software Development Concepts</li>
+                                            <li><strong>CNIT 17600</strong> - Information Technology Architectures</li>
+                                            <li><strong>CNIT 18000</strong> - Introduction To Systems Development</li>
+                                            <li><strong>CNIT 24200</strong> - System Administration</li>
+                                            <li><strong>CNIT 25501</strong> - Object-Oriented Programming Introduction</li>
+                                            <li><strong>CNIT 27000</strong> - Cybersecurity Fundamentals I</li>
+                                            <li><strong>CNIT 28000</strong> - Systems Analysis And Design Methods</li>
+                                            <li><strong>CNIT 32000</strong> - Policy, Regulation, And Globalization In Information Technology</li>
+                                            <li><strong>CNIT 48000</strong> - Managing Information Technology Projects</li>
+
+                                            <br>
+                                            <strong>DATA Core Courses</strong>
+
+                                            <li><strong>CNIT 27200</strong> - Database Fundamentals</li>
+                                            <li><strong>CNIT 32200</strong> - Research Methodology And Design</li>
+                                            <li><strong>CNIT 37200</strong> - Database Programming</li>
+                                            <li><strong>CNIT 39200</strong> - Enterprise Data Management</li>
+                                            <li><strong>CNIT 48200</strong> - Six Sigma Data Quality For Continuous Improvement</li>
+                                            <li><strong>CNIT 48300</strong> - Applied Machine Learning</li>
+                                            <li><strong>CNIT 48400</strong> - Applications In Data Science</li>
+
+                                            <br>
+                                            <strong>Cognate Application Focus Area</strong>
+
+                                            <li>
+                                                18 credits outside of CNIT satisfying one of the following options:
+                                            </li>
+
+                                            <li>
+                                                1. Completion of Statistics Minor and 9 credit hours in Application Focus area of the Applications in Data Science Certificate
+                                            </li>
+
+                                            <li>
+                                                2. Completion of 18 credits from the Application Focus area of the Applications in Data Science Certificate
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs5"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs5"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Data Analyst</li>
+                                            <li>Data Scientist</li>
+                                            <li>Business Intelligence Analyst</li>
+                                            <li>Machine Learning Engineer</li>
+                                            <li>Data Engineer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->           
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Game Development card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Game Development</div> 
+                    <img class="card-img" src="../images/game-design-major-purdue.jpg" alt="Game development and design interface" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Bring virtual worlds to life in industries that include education, health care, science, research, employee training and, of course, gaming!</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses6"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses6"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CGT 10501</strong> - Introduction To Games (UCC: STS)</li>
+                                            <li><strong>CGT 11505</strong> - Scripting And Computational Thinking</li>
+                                            <li><strong>CGT 11600</strong> - Geometric Modeling For Visualization And Communication</li>
+                                            <li><strong>CGT 11800</strong> - Fundamentals Of Imaging Technology</li>
+                                            <li><strong>CGT 14100</strong> - Internet Foundations Technologies And Development</li>
+                                            <li><strong>CGT 17208</strong> - User Experience Design Studio I: Fundamentals (UCC: STS)</li>
+
+                                            <li><strong>CGT 20500</strong> - Portfolio Review</li>
+
+                                            <li><strong>CGT 24500</strong> - Game Development I: Core Skills And Technologies</li>
+                                            <li><strong>CGT 25001</strong> - Computer Graphics Professional Practices I</li>
+                                            <li><strong>CGT 25500</strong> - Game Development II: Design And Psychology</li>
+                                            <li><strong>CGT 27000</strong> - Introduction To Data Visualization</li>
+
+                                            <li><strong>CGT 30505</strong> - Portfolio II</li>
+
+                                            <li>
+                                                <strong>CGT 36500</strong> - Game Development Practicum (must be taken twice for 6 credits total)
+                                            </li>
+
+                                            <li><strong>CGT 40500</strong> - Senior Portfolio Review</li>
+
+                                            <li><strong>CGT 41101</strong> - Contemporary Problems In Applied Computer Graphics I</li>
+                                            <li><strong>CGT 41201</strong> - Contemporary Problems In Applied Computer Graphics II</li>
+
+                                            <li><strong>CGT 45001</strong> - Computer Graphics Professional Practices II</li>
+
+                                            <br>
+                                            <strong>Requirements</strong>
+
+                                            <li>Intercultural Requirement</li>
+                                            <li>Humanities Requirement</li>
+                                            <li>Professional Requirement</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs6"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs6"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Game Developer</li>
+                                            <li>Gameplay Programmer</li>
+                                            <li>Technical Designer</li>
+                                            <li>Level Designer</li>
+                                            <li>Game Systems Engineer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->             
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Themed Entertainment Design card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Themed Entertainment Design</div> 
+                    <img class="card-img" src="../images/themed-entertainment-experiences-purdue.jpg" alt="Themed entertainment design and immersive experiences" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Build the future of theme parks, museums and beyond with immersive experiences across digital, physical, and virtual worlds.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses7"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses7"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CGT 11200</strong> - Sketching For Visualization And Communication</li>
+                                            <li><strong>CGT 11600</strong> - Geometric Modeling For Visualization And Communication</li>
+                                            <li><strong>CGT 11700</strong> - Illustrating For Visualization And Communication</li>
+                                            <li><strong>CGT 11800</strong> - Fundamentals Of Imaging Technology</li>
+                                            <li><strong>CGT 12300</strong> - Animation Foundations</li>
+                                            <li><strong>CGT 14700</strong> - Visual Effects Introduction</li>
+                                            <li><strong>CGT 20400</strong> - Introduction To Themed Attraction Design</li>
+
+                                            <li><strong>CGT 20500</strong> - Portfolio Review</li>
+
+                                            <li><strong>CGT 25001</strong> - Computer Graphics Professional Practices I</li>
+                                            <li><strong>CGT 25100</strong> - Principles Of Creative Design</li>
+
+                                            <li><strong>CGT 30505</strong> - Portfolio II</li>
+
+                                            <li><strong>CGT 31300</strong> - Digital Painting I For Computer Graphics</li>
+                                            <li><strong>CGT 31700</strong> - Planning And Communicating Themed Attraction Design</li>
+                                            <li><strong>CGT 32800</strong> - Business Of Themed Entertainment</li>
+                                            <li><strong>CGT 36700</strong> - Previsualization In Themed Entertainment</li>
+
+                                            <li><strong>CGT 40500</strong> - Senior Portfolio Review</li>
+
+                                            <li><strong>CGT 40700</strong> - Current And Future Trends In Themed Attraction Design</li>
+                                            <li><strong>CGT 41101</strong> - Contemporary Problems In Applied Computer Graphics I</li>
+                                            <li><strong>CGT 44200</strong> - Production For Computer Animation</li>
+                                            <li><strong>CGT 45001</strong> - Computer Graphics Professional Practices II</li>
+
+                                            <br>
+                                            <strong>CGT Globalization Selective</strong>
+                                            <li>3 credits required (approved CGT globalization elective)</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs7"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs7"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Experience Designer</li>
+                                            <li>Theme Park Designer</li>
+                                            <li>Attraction Concept Artist</li>
+                                            <li>Previsualization Artist</li>
+                                            <li>Creative Technologist</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->             
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- UX Design card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">UX Design</div> 
+                    <img class="card-img" src="../images/ux-design-major-purdue.jpg" alt="User experience design and interface prototyping" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">User experience (UX) designers incorporate customer feedback to research end users’ needs and brainstorm solutions that help them navigate products.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses8"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses8"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Departmental/Program Major Courses</strong>
+
+                                            <li><strong>CGT 11800</strong> - Fundamentals Of Imaging Technology</li>
+                                            <li><strong>CGT 14100</strong> - Internet Foundations Technologies And Development</li>
+
+                                            <li><strong>CGT 17207</strong> - User Experience Design Experience Studio I</li>
+                                            <li><strong>CGT 17208</strong> - User Experience Design Studio I: Fundamentals (UCC: STS)</li>
+
+                                            <li><strong>CGT 25001</strong> - Computer Graphics Professional Practices I</li>
+                                            <li><strong>CGT 27000</strong> - Introduction To Data Visualization</li>
+
+                                            <li><strong>CGT 27108</strong> - User Experience Design Studio II: Screen</li>
+
+                                            <li>
+                                                <strong>CGT 27207</strong> - User Experience Design Experience Studio II (must be taken twice)
+                                            </li>
+
+                                            <li><strong>CGT 27208</strong> - User Experience Design Studio III: Cross-Channel</li>
+
+                                            <li><strong>CGT 37108</strong> - User Experience Design Studio IV: Strategy</li>
+
+                                            <li>
+                                                <strong>CGT 37207</strong> - User Experience Design Experience Studio III (must be taken twice)
+                                            </li>
+
+                                            <li><strong>CGT 37208</strong> - User Experience Design Studio V: Specialization</li>
+
+                                            <li><strong>CGT 41101</strong> - Contemporary Problems In Applied Computer Graphics I</li>
+                                            <li><strong>CGT 41201</strong> - Contemporary Problems In Applied Computer Graphics II</li>
+
+                                            <li><strong>CGT 45001</strong> - Computer Graphics Professional Practices II</li>
+
+                                            <br>
+                                            <strong>Requirements</strong>
+
+                                            <li>Intercultural Requirement</li>
+                                            <li>Humanities Requirement</li>
+                                            <li>Professional Requirement</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs8"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs8"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>UX Designer</li>
+                                            <li>UI Designer</li>
+                                            <li>Product Designer</li>
+                                            <li>User Researcher</li>
+                                            <li>Interaction Designer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->             
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- Web Programming and Design card -->
+            <div class="col"> 
+                <div class="card my-1"> 
+                    <div class="card-header button-and-text-inverse">Web Programming and Design</div> 
+                    <img class="card-img" src="../images/web-programming-major-purdue.jpg" alt="Web programming and design development environment" /> 
+                    <div class="card-body"> 
+                        <div class="card-title"></div> 
+                        <div class="card-subtitle"></div> 
+                        <p class="card-text">Build secure, user-friendly web apps, such as information storage/retrieval programs and financial transactions, using PHP, MySQL and ASP.</p> 
+                        <!-- toggle info -- gutted from accordion -->
+                        <div class="accordion" id="accordionPathway">
+
+                            <!-- COURSES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCourses">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCourses9"
+                                        aria-expanded="false"
+                                        aria-controls="collapseCourses">
+                                        Courses
+                                    </button>
+                                </h2>
+
+                                <div id="collapseCourses9"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingCourses">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+
+                                            <strong>Required Major Courses</strong>
+
+                                            <li><strong>CGT 11505</strong> - Scripting And Computational Thinking</li>
+                                            <li><strong>CGT 11600</strong> - Geometric Modeling For Visualization And Communication</li>
+                                            <li><strong>CGT 11800</strong> - Fundamentals Of Imaging Technology</li>
+                                            <li><strong>CGT 14100</strong> - Internet Foundations Technologies And Development</li>
+
+                                            <li><strong>CGT 17208</strong> - User Experience Design Studio I: Fundamentals (UCC: STS)</li>
+
+                                            <li><strong>CGT 25001</strong> - Computer Graphics Professional Practices I</li>
+                                            <li><strong>CGT 25300</strong> - Front-End Web Development</li>
+                                            <li><strong>CGT 35300</strong> - Principles Of Interactive And Dynamic Media</li>
+                                            <li><strong>CGT 35600</strong> - Web Programming, Development And Data Integration</li>
+                                            <li><strong>CGT 37000</strong> - Interactive Data Visualization</li>
+
+                                            <li><strong>CGT 41101</strong> - Contemporary Problems In Applied Computer Graphics I</li>
+                                            <li><strong>CGT 41201</strong> - Contemporary Problems In Applied Computer Graphics II</li>
+
+                                            <li><strong>CGT 45001</strong> - Computer Graphics Professional Practices II</li>
+                                            <li><strong>CGT 45600</strong> - Advanced Web Programming, Development And Data Integration</li>
+
+                                            <br>
+                                            <strong>Requirements</strong>
+
+                                            <li>Intercultural Requirement</li>
+                                            <li>Humanities Requirement</li>
+                                            <li>Professional Requirement</li>
+
+                                            <br>
+                                            <strong>Major Selectives (Choose 3 courses)</strong>
+
+                                            <li>CGT Selective</li>
+                                            <li>CGT Selective</li>
+                                            <li>CGT Selective</li>
+                                            <li>CGT Selective (200 level or higher)</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COURSES -->
+
+                            <!-- JOBS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingJobs">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJobs9"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJobs">
+                                        Jobs
+                                    </button>
+                                </h2>
+
+                                <div id="collapseJobs9"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJobs">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li>Front-End Developer</li>
+                                            <li>Full-Stack Developer</li>
+                                            <li>Web Designer</li>
+                                            <li>UI Developer</li>
+                                            <li>Web Application Developer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END JOBS -->
+                             
+                        </div>
+                        <!-- end toggle info -->             
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
