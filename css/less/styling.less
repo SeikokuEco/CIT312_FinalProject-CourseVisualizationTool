@@ -30,3 +30,38 @@
     background-color: darken(@gold, 20%);
     color: @black;
 }
+
+// make the background dark and the text lighter but not too light
+body.body-colours {
+    background: @blackGradient;
+    color: @offWhite;
+}
+
+// adds middle highlight in background
+body.body-colours::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: @heroCircleGradient;
+    z-index: -1;
+}
+
+
+
+fieldset {
+    border-color: @gray !important;
+}
+
+fieldset legend {
+    color: @offWhite;
+}
+
+// make a class to make the nav gold
+.bg-gold {
+    background-color: @gold;
+}
+
+// override the .body-colours making the text @offWhite 
+.card {
+    color: @black;
+}
